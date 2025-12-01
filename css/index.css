@@ -212,7 +212,7 @@ nav {
 }
 .hero {
 
-    background: linear-gradient(135deg, rgba(33, 59, 94, 1), rgba(255, 159, 128, 0.3)), url('/photos/5262813.webp');
+    background: linear-gradient(135deg, rgba(33, 59, 94, 1), rgba(255, 159, 128, 0.3)), url('../photos/5262813.webp');
     background-size: cover;
     background-position: center;
     color: white;
