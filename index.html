@@ -170,45 +170,93 @@
     <!-- Success Stories Section -->
     <section id="success-stories" class="success-stories">
         <h2>Success Stories</h2>
-        <div class="story-card">
-        <div class="story-image">
-            <img src="./photos/examzeal.jpg" alt="Story Image" />
-        </div>
-        <div class="story-content">
-            <h3>First Success</h3>
-            <p>Collaborated with Pillar India to brand their Career Guidance Program, inspiring individuals and maximizing outreach for future success.</p>
-        </div>
-
-        <!-- For MOU -->
-            <!-- <h3>MoU with Zhagaram Consulting Insights Pvt Ltd</h3>
-            <p>Strategic partnership to provide training, placement assistance and internships.</p>
-            <div class="story-benefits">
-                <div class="benefit">
-                    <i class="fas fa-graduation-cap"></i>
-                    <h4>Training & Development</h4>
+        <div class="carousel-container">
+            <div class="carousel-wrapper">
+                <!-- Slide 1 -->
+                <div class="carousel-slide active">
+                    <div class="slide-image">
+                        <img src="./photos/examzeal.jpg" alt="Pillar India Partnership" />
+                    </div>
+                    <div class="slide-text">
+                        <h3>Pillar India Partnership</h3>
+                        <p>Lead Consultancy & Training collaborated with Pillar India to support an advertising shoot aimed at promoting their 
+                            Career Guidance Program. This strategic partnership strengthened brand visibility, inspired aspiring learners, 
+                            and maximized outreach by showcasing impactful guidance opportunities for future academic and professional success.</p>
+                    </div>
                 </div>
-                <div class="benefit">
-                    <i class="fas fa-briefcase"></i>
-                    <h4>Internship Opportunities</h4>
+
+                <!-- Slide 2 -->
+                <div class="carousel-slide">
+                    <div class="slide-image">
+                        <img src="./photos/case-study.jpg" alt="Innovative Case Study Approaches" />
+                    </div>
+                    <div class="slide-text">
+                        <h3>Innovative Case Study Approaches</h3>
+                        <p>Lead Consultancy & Training, under KPR Global Edutech Consulting Services, conducted a one-day Management
+                             Development Program on “Innovative Case Study Approaches,” attended by academicians and industrialists. 
+                             Nearly 30 participants gained practical insights to strengthen pedagogical skills and enhance case-based
+                              teaching effectiveness.</p>
+                    </div>
                 </div>
-                <div class="benefit">
-                    <i class="fas fa-route"></i>
-                    <h4>Placement Assistance</h4>
+
+                <!-- Slide 3 -->
+                <div class="carousel-slide">
+                    <div class="slide-image">
+                        <img src="./photos/mou.jpg" alt="MoU with EazyLink Academy" />
+                    </div>
+                    <div class="slide-text">
+                        <h3>MoU with EazyLink Academy</h3>
+                        <p>KPRCAS, through its Centre for International Affairs and Lead Consultancy & Training, 
+                            signed an MoU with EazyLink Academy to strengthen academic collaboration and global 
+                            learning opportunities. The partnership aims to enhance training, skill development,
+                            and international exposure for students and faculty.</p>
+                    </div>
                 </div>
-            </div> -->
 
-       <!-- For more cards to be added -->
+                <!-- Slide 4 -->
+                <div class="carousel-slide">
+                    <div class="slide-image">
+                        <img src="./photos/global-education.jpg" alt="Global Education" />
+                    </div>
+                    <div class="slide-text">
+                        <h3>Global Education</h3>
+                        <p>The Centre for International Affairs and Lead Consultancy & Training jointly organized a career guidance program on 
+                            “Insights of Global Education and Career Opportunities.” Experts from Griffith College, Ireland, and EazyLink Academy 
+                            addressed students, 
+                            offering valuable perspectives on international education pathways and emerging global career prospects.</p>
+                    </div>
+                </div>
 
-            <!-- <div class="story-card">
-        
-        <div class="story-content">
-            <h3>First Success</h3>
-            <p>Collaborated with Pillar India to brand their Career Guidance Program, inspiring individuals and maximizing outreach for future success.</p>
-        </div>
-        <div class="story-image">
-            <img src="photos/examzeal.jpg" alt="Story Image" />
-        </div> -->
+                <!-- Slide 5 -->
+                <div class="carousel-slide">
+                    <div class="slide-image">
+                        <img src="./photos/website.jpg" alt="Web Design and Development" />
+                    </div>
+                    <div class="slide-text">
+                        <h3>Web Design and Development</h3>
+                        <p>Lead Consultancy & Training developed a complete website for the campus startup Fruitacy, enhancing its digital
+                             presence and brand identity. The platform was designed to showcase products, improve customer reach, 
+                             and support the startup’s growth with a clean, user-friendly interface.</p>
+                    </div>
+                </div>
+            </div>
 
+            <!-- Navigation Buttons -->
+            <button class="carousel-btn prev" onclick="moveCarousel(-1)">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-btn next" onclick="moveCarousel(1)">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <span class="indicator active" onclick="currentSlide(0)"></span>
+                <span class="indicator" onclick="currentSlide(1)"></span>
+                <span class="indicator" onclick="currentSlide(2)"></span>
+                <span class="indicator" onclick="currentSlide(3)"></span>
+                <span class="indicator" onclick="currentSlide(4)"></span>
+            </div>
         </div>
     </section>
 
@@ -291,9 +339,11 @@
 
     <!-- Footer -->
     <footer>
-        <p>Crafted by <a href="https://www.linkedin.com/in/aswinkirubanantham?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ">Aswin Kirubanantham</a> &copy; 2024 LEAD Consultancy & Training. All Rights Reserved.</p>
+        <p>Crafted by <a href="https://www.linkedin.com/in/aswinkirubanantham?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ">Aswin Kirubanantham</a> &copy; 2025 LEAD Consultancy & Training. All Rights Reserved.</p>
     </footer>
 
-    <script src="/js/index.js"></script>
+    <script src="js/index.js"></script>
+    
+   
 </body>
 </html>

@@ -52,4 +52,71 @@ document.addEventListener('DOMContentLoaded', () => {
             navbar.style.boxShadow = '0 2px 10px rgba(0,0,0,0.05)';
         }
     });
+
+    // Initialize carousel
+    showSlide(currentSlideIndex);
+    
+    // Auto-play carousel (optional - uncomment to enable)
+    // startAutoPlay();
 });
+
+// Carousel variables
+let currentSlideIndex = 0;
+let autoPlayInterval;
+
+// Move carousel function
+function moveCarousel(n) {
+    showSlide(currentSlideIndex += n);
+    resetAutoPlay(); // Reset auto-play timer when user interacts
+}
+
+// Current slide function
+function currentSlide(n) {
+    showSlide(currentSlideIndex = n);
+    resetAutoPlay(); // Reset auto-play timer when user interacts
+}
+
+// Show slide function
+function showSlide(n) {
+    const slides = document.querySelectorAll('.carousel-slide');
+    const indicators = document.querySelectorAll('.indicator');
+
+    if (n >= slides.length) {
+        currentSlideIndex = 0;
+    }
+    if (n < 0) {
+        currentSlideIndex = slides.length - 1;
+    }
+
+    slides.forEach(slide => {
+        slide.classList.remove('active');
+    });
+    indicators.forEach(indicator => {
+        indicator.classList.remove('active');
+    });
+
+    if (slides[currentSlideIndex]) {
+        slides[currentSlideIndex].classList.add('active');
+    }
+    if (indicators[currentSlideIndex]) {
+        indicators[currentSlideIndex].classList.add('active');
+    }
+}
+
+// Auto-play functions (optional)
+function startAutoPlay() {
+    autoPlayInterval = setInterval(() => {
+        moveCarousel(1);
+    }, 5000); // Change slide every 5 seconds
+}
+
+function stopAutoPlay() {
+    if (autoPlayInterval) {
+        clearInterval(autoPlayInterval);
+    }
+}
+
+function resetAutoPlay() {
+    stopAutoPlay();
+    startAutoPlay();
+}
