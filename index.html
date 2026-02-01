@@ -156,7 +156,7 @@
                 <p>Turning plans into actionable outcomes</p>
             </div>
         </div>
-        <div class="timeline-card">
+        <div class="carousel-card">
             <div class="timeline-step">4</div>
             <div class="timeline-details">
                 <h3>Support</h3>
@@ -170,12 +170,14 @@
     <!-- Success Stories Section -->
     <section id="success-stories" class="success-stories">
         <h2>Success Stories</h2>
-        <div class="carousel-container">
+        <div class="carousel-container" id="carousel-container">
             <div class="carousel-wrapper">
-                <!-- Slide 1 -->
-                <div class="carousel-slide active">
-                    <div class="slide-image">
-                        <img src="./photos/examzeal.jpg" alt="Pillar India Partnership" />
+                <!-- Slide 1: Single Image -->
+                <div class="carousel-slide active" data-slide="0">
+                    <div class="slide-images-container">
+                        <div class="slide-image active">
+                            <img src="./photos/examzeal.jpg" alt="Pillar India Partnership" />
+                        </div>
                     </div>
                     <div class="slide-text">
                         <h3>Pillar India Partnership</h3>
@@ -185,24 +187,28 @@
                     </div>
                 </div>
 
-                <!-- Slide 2 -->
-                <div class="carousel-slide">
-                    <div class="slide-image">
-                        <img src="./photos/case-study.jpg" alt="Innovative Case Study Approaches" />
+                <!-- Slide 2: Single Image -->
+                <div class="carousel-slide" data-slide="1">
+                    <div class="slide-images-container">
+                        <div class="slide-image active">
+                            <img src="./photos/case-study.jpg" alt="Innovative Case Study Approaches" />
+                        </div>
                     </div>
                     <div class="slide-text">
                         <h3>Innovative Case Study Approaches</h3>
                         <p>Lead Consultancy & Training, under KPR Global Edutech Consulting Services, conducted a one-day Management
-                             Development Program on “Innovative Case Study Approaches,” attended by academicians and industrialists. 
+                             Development Program on "Innovative Case Study Approaches," attended by academicians and industrialists. 
                              Nearly 30 participants gained practical insights to strengthen pedagogical skills and enhance case-based
                               teaching effectiveness.</p>
                     </div>
                 </div>
 
-                <!-- Slide 3 -->
-                <div class="carousel-slide">
-                    <div class="slide-image">
-                        <img src="./photos/mou.jpg" alt="MoU with EazyLink Academy" />
+                <!-- Slide 3: Single Image -->
+                <div class="carousel-slide" data-slide="2">
+                    <div class="slide-images-container">
+                        <div class="slide-image active">
+                            <img src="./photos/mou.jpg" alt="MoU with EazyLink Academy" />
+                        </div>
                     </div>
                     <div class="slide-text">
                         <h3>MoU with EazyLink Academy</h3>
@@ -213,37 +219,43 @@
                     </div>
                 </div>
 
-                <!-- Slide 4 -->
-                <div class="carousel-slide">
-                    <div class="slide-image">
-                        <img src="./photos/global-education.jpg" alt="Global Education" />
+                <!-- Slide 4: Single Image -->
+                <div class="carousel-slide" data-slide="3">
+                    <div class="slide-images-container">
+                        <div class="slide-image active">
+                            <img src="./photos/global-education.jpg" alt="Global Education" />
+                        </div>
                     </div>
                     <div class="slide-text">
                         <h3>Global Education</h3>
                         <p>The Centre for International Affairs and Lead Consultancy & Training jointly organized a career guidance program on 
-                            “Insights of Global Education and Career Opportunities.” Experts from Griffith College, Ireland, and EazyLink Academy 
+                            "Insights of Global Education and Career Opportunities." Experts from Griffith College, Ireland, and EazyLink Academy 
                             addressed students, 
                             offering valuable perspectives on international education pathways and emerging global career prospects.</p>
                     </div>
                 </div>
 
-                <!-- Slide 5 -->
-                <div class="carousel-slide">
-                    <div class="slide-image">
-                        <img src="./photos/website.jpg" alt="Web Design and Development" />
+                <!-- Slide 5: Single Image -->
+                <div class="carousel-slide" data-slide="4">
+                    <div class="slide-images-container">
+                        <div class="slide-image active">
+                            <img src="./photos/website.jpg" alt="Web Design and Development" />
+                        </div>
                     </div>
                     <div class="slide-text">
                         <h3>Web Design and Development</h3>
                         <p>Lead Consultancy & Training developed a complete website for the campus startup Fruitacy, enhancing its digital
                              presence and brand identity. The platform was designed to showcase products, improve customer reach, 
-                             and support the startup’s growth with a clean, user-friendly interface.</p>
+                             and support the startup's growth with a clean, user-friendly interface.</p>
                     </div>
                 </div>
 
-                <!-- Slide 6 -->
-                <div class="carousel-slide">
-                    <div class="slide-image">
-                        <img src="./photos/pan-mela.jpg" alt="Pan Card Mela" />
+                <!-- Slide 6: Single Image -->
+                <div class="carousel-slide" data-slide="5">
+                    <div class="slide-images-container">
+                        <div class="slide-image active">
+                            <img src="./photos/pan-mela.jpg" alt="Pan Card Mela" />
+                        </div>
                     </div>
                     <div class="slide-text">
                         <h3>Pan Card Mela</h3>
@@ -252,25 +264,103 @@
                             and benefited from this service, making the initiative highly impactful and student-centric.</p>
                     </div>
                 </div>
+
+                <!-- Slide 7: Multiple Images (20 images) -->
+                <div class="carousel-slide" data-slide="6">
+                    <div class="slide-images-container">
+                        <div class="slide-image active">
+                            <img src="./photos/story1.jpg" alt="Professional Excellence  1" />
+                        </div>
+                        <div class="slide-image">
+                            <img src="./photos/story2.jpg" alt="Professional Excellence  2" />
+                        </div>
+                        <div class="slide-image">
+                            <img src="./photos/story3.jpg" alt="Professional Excellence  3" />
+                        </div>
+                        <div class="slide-image">
+                            <img src="./photos/story4.jpg" alt="Professional Excellence  4" />
+                        </div>
+                        <div class="slide-image">
+                            <img src="./photos/story5.jpg" alt="Professional Excellence  5" />
+                        </div>
+                        <div class="slide-image">
+                            <img src="./photos/story6.jpg" alt="Professional Excellence  6" />
+                        </div>
+                        <div class="slide-image">
+                            <img src="./photos/story7.jpg" alt="Professional Excellence  7" />
+                        </div>
+                        <div class="slide-image">
+                            <img src="./photos/story8.jpg" alt="Professional Excellence  8" />
+                        </div>
+                        <div class="slide-image">
+                            <img src="./photos/story9.jpg" alt="Professional Excellence  9" />
+                        </div>
+                        <div class="slide-image">
+                            <img src="./photos/story10.jpg" alt="Professional Excellence  10" />
+                        </div>
+                        <div class="slide-image">
+                            <img src="./photos/story11.jpg" alt="Professional Excellence  11" />
+                        </div>
+                        <div class="slide-image">
+                            <img src="./photos/story12.jpg" alt="Professional Excellence  12" />
+                        </div>
+                        <div class="slide-image">
+                            <img src="./photos/story13.jpg" alt="Professional Excellence  13" />
+                        </div>
+                        <div class="slide-image">
+                            <img src="./photos/story14.jpg" alt="Professional Excellence  14" />
+                        </div>
+                        <div class="slide-image">
+                            <img src="./photos/story15.jpg" alt="Professional Excellence  15" />
+                        </div>
+                        <div class="slide-image">
+                            <img src="./photos/story16.jpg" alt="Professional Excellence  16" />
+                        </div>
+                        <div class="slide-image">
+                            <img src="./photos/story17.jpg" alt="Professional Excellence  17" />
+                        </div>
+                        <div class="slide-image">
+                            <img src="./photos/story18.jpg" alt="Professional Excellence  18" />
+                        </div>
+                        <div class="slide-image">
+                            <img src="./photos/story19.jpg" alt="Professional Excellence 19" />
+                        </div>
+                        <div class="slide-image">
+                            <img src="./photos/story20.jpg" alt="Professional Excellence 20" />
+                        </div>
+                        <!-- Image Navigation (shown only for multi-image slides) -->
+                        <button class="img-nav-btn img-prev" onclick="moveImage(-1)">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="img-nav-btn img-next" onclick="moveImage(1)">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <div class="image-counter"><span class="current-img">1</span> / <span class="total-imgs">20</span></div>
+                    </div>
+                    <div class="slide-text">
+                        <h3>Professional Excellence 
+                            Training Programme</h3>
+                        <p>We, the team of KPRCAS Lead Consultancy & Training, 
+                            powered by KPR Global Edutech Consulting Services, 
+                            have successfully completed a 5-Day “Professional Excellence 
+                            Training Programme” for the employees of COMTEN Consulting Engineers Pvt.
+                             Ltd., Coimbatore. The programme focused on enhancing professional skills,
+                              leadership mindset, teamwork, and workplace effectiveness through 
+                              interactive sessions and experiential learning activities.</p>
+                    </div>
+                </div>
             </div>
 
             <!-- Navigation Buttons -->
-            <button class="carousel-btn prev" onclick="moveCarousel(-1)">
+            <button class="carousel-btn prev" id="carousel-prev" onclick="moveCarousel(-1)">
                 <i class="fas fa-chevron-left"></i>
             </button>
-            <button class="carousel-btn next" onclick="moveCarousel(1)">
+            <button class="carousel-btn next" id="carousel-next" onclick="moveCarousel(1)">
                 <i class="fas fa-chevron-right"></i>
             </button>
 
             <!-- Indicators -->
-            <div class="carousel-indicators">
-                <span class="indicator active" onclick="currentSlide(0)"></span>
-                <span class="indicator" onclick="currentSlide(1)"></span>
-                <span class="indicator" onclick="currentSlide(2)"></span>
-                <span class="indicator" onclick="currentSlide(3)"></span>
-                <span class="indicator" onclick="currentSlide(4)"></span>
-                <span class="indicator" onclick="currentSlide(5)"></span>
-            </div>
+            <div class="carousel-indicators" id="carousel-indicators"></div>
         </div>
     </section>
 
